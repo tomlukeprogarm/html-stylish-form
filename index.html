@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Stylish Form</title>
-  </head>
-  <body>
-
-  </body>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="full-container">
+            <form>
+                <div class="input-container">
+                    <label>Username
+                        <input type="text" placeholder="Enter your username" name="username" required>
+                    </label>
+                </div>
+                <div class="input-container">
+                    <label>Password
+                        <input type="password" placeholder="Enter your password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required>
+                        <small><br> Password must contain at least one uppercase letter, one lowercase letter, one digit, and be at least 8 characters long.</small>
+                    </label>
+                </div>
+                <div class="input-container">
+                    <label>Email
+                        <input type="email" placeholder="Enter your Email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                        <small><br> Enter a valid email address.</small>
+                    </label>
+                </div>
+                <div class="input-container">
+                    <label>What is your sign?
+                        <input type="text" name="sign" placeholder="Enter your sign" required>
+                    </label>
+                </div>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
 </html>

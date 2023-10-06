@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: 100vh;
+  background: linear-gradient(to bottom, #05ad78, #851694);
+  font-family: monospace;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-container {
+  padding: 20px;
+  text-align: center;
+  border-radius: 3px;
+  width: 350px;
+  height: 300px;
+  margin: auto;
+  background-color: aliceblue;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+.submit:disabled {
+  background: #ccc
+  cursor: not-allowed; 
+}
+
+
+.submit {
+  background: linear-gradient(to bottom, #16005f, #4f04ff);
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: monospace;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: linear-gradient(to bottom, #4f04ff, #16005f);
+}
